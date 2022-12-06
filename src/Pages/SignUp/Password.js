@@ -13,7 +13,7 @@ const Password = ({ firstName, lastName, email, phoneNumber }) => {
     } else {
       setPassword(password)
     }
-    console.log(value.length)
+   
     setPassword(value)
   }
   const handleOnclick = (e) => {
@@ -59,7 +59,7 @@ const Password = ({ firstName, lastName, email, phoneNumber }) => {
           type="text"
           placeholder="Write Password"
         />
-        <span style={{ marginTop: -160 }} className="span">
+        <span  className="span passSpan">
           Your password must be 8 character
         </span>
         <div

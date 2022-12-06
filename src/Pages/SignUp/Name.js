@@ -42,9 +42,9 @@ const Name = ({ setFirstName, setLastName }) => {
         />
 
         <button
+          className="NameForm"
           onClick={handleOnclick}
           style={{
-            width: 142,
             alignSelf: "center",
           }}
         >

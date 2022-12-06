@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import logo from "../../assets/logo.png"
 import bg from "../../assets/bg.png"
 import { Link, useNavigate } from "react-router-dom"
-const Login = ({ token, setToken }) => {
+const Login = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const navigate = useNavigate()
@@ -34,14 +34,14 @@ const Login = ({ token, setToken }) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.access_token)
-        setToken(data.access_token)
-        //localStorage.setItem("idToken", JSON.stringify(data))
+       
+
+        localStorage.setItem("idToken", JSON.stringify(data))
       })
     navigate("/test")
     e.preventDefault()
   }
-  console.log(token.access_token)
+
   return (
     <div className="container">
       <div className="sideImg">

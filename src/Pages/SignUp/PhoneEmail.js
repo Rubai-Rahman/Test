@@ -30,8 +30,16 @@ const PhoneEmail = ({setPhoneNumber,setEmail}) => {
       </div>
       <div className="form">
         <h2>SignUp Form</h2>
-        <input onBlur={handlePhoneNumber} type="text" placeholder="Write PhoneNumber" />
-        <input onBlur={handleEmail} type="email" placeholder="Write Email Address" />
+        <input
+          onBlur={handlePhoneNumber}
+          type="text"
+          placeholder="Write PhoneNumber"
+        />
+        <input
+          onBlur={handleEmail}
+          type="email"
+          placeholder="Write Email Address"
+        />
         <div
           style={{
             display: "flex",
@@ -51,9 +59,10 @@ const PhoneEmail = ({setPhoneNumber,setEmail}) => {
             Back
           </Link>
           <button
+            className="NameForm"
             onClick={handleOnclick}
             style={{
-              width: 142,
+          
               alignSelf: "center",
             }}
           >

@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-bg: #ffff;
+  --color-primary: #1678cb;
+  --color-text: #3b8bea;
+  --color-small: #7e7e7e;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--color-bg);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* form css*/
+button {
+  height: 49px;
+  border-radius: 15px;
+  color: var(--color-bg);
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #1678cb;
+  background-color: var(--color-primary);
+}
+button:hover {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 1vh;
+}
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: -1px 0px 13px black;
+  width: 516px;
+  height: 630px;
+  margin-top: 19px;
+  padding: 100px 0px 89px 50px;
+}
+* > input {
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid var(--color-small);
+  width: 360px;
+  font-size: 16px;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  align-self: center;
+}
+.span {
+  margin-top: -70px;
+  font-size: 12px;
+  color: var(--color-small);
+}
+.option {
+  margin-top: -20px;
+  align-self: center;
+  margin-left: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.option > span {
+  font-size: 12px;
+  color: var(--color-small);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* logo css*/
+.logo > img {
+  width: 165px;
+  height: 60px;
+  margin-left: 56px;
+  margin-top: 62px;
+  object-fit: cover;
+}
+.bg > img {
+  object-fit: cover;
+  width: 612px;
+  height: 437px;
+  align-self: center;
+  margin-left: 128px;
 }
